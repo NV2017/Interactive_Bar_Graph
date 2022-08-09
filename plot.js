@@ -104,8 +104,8 @@ let drawBars = () => {
        document.querySelector('#tooltip').onfocus = (document.querySelector('#tooltip').style.background = 'cyan');
      })
      .on('mouseout',item=>{
-       // tooltip.transition()
-       //        .style('visibility','hidden');
+       tooltip.transition()
+              .style('visibility','hidden');
        document.querySelector('#tooltip').onfocus = (document.querySelector('#tooltip').style.background = 'cyan');
        tooltip.text('US GDP Time Series Data');
      })
